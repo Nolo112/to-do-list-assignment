@@ -17,10 +17,8 @@ $(document).ready(function () {
   };
 
   var displayTasks = function () {
-    // Clear the task list
     $('#todo-list').empty();
 
-    // Get filter and sorting values
     var filter = $('#filter-tasks').val();
     var sort = $('#sort-tasks').val();
 
@@ -34,14 +32,14 @@ $(document).ready(function () {
       return true; // 'all' case
     });
 
-    // Sort tasks by ID or created_at
+    // Sort tasks by ID or date
     if (sort === 'id') {
       filteredTasks.sort(function (a, b) {
         return a.id - b.id;
       });
-    } else if (sort === 'created_at') {
+    } else if (sort === 'date') {
       filteredTasks.sort(function (a, b) {
-        return new Date(a.created_at) - new Date(b.created_at);
+        return new Date(a.date) - new Date(b.date);
       });
     }
 
@@ -136,12 +134,12 @@ $(document).ready(function () {
     }
   });
 
-  // Handle filter change
+  // Filter change
   $('#filter-tasks').on('change', function () {
     displayTasks();
   });
 
-  // Handle sort change
+  // Sort change
   $('#sort-tasks').on('change', function () {
     displayTasks();
   });

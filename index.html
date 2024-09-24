@@ -15,7 +15,6 @@
         <div class="col-xs-12">
           <h2>To Do List</h2>
 
-          <!-- Form to create a new task -->
           <form id="create-task" class="form-inline">
             <div class="form-group">
               <input id="new-task-content" type="text" class="form-control" placeholder="Enter new task" required />
@@ -23,12 +22,11 @@
             <button type="submit" class="btn btn-primary">Create Task</button>
           </form>
 
-          <!-- Space between the button and task list -->
           <div class="task-list-space"></div>
 
-          <!-- Filter and Sort options -->
           <div class="form-inline">
-            <!-- Filter Toggle -->
+           
+            <!-- Toggle -->
             <label for="filter-tasks">Show: </label>
             <select id="filter-tasks" class="form-control">
               <option value="all">All</option>
@@ -36,7 +34,6 @@
               <option value="completed">Completed</option>
             </select>
 
-            <!-- Sorting Toggle -->
             <label for="sort-tasks">Sort By: </label>
             <select id="sort-tasks" class="form-control">
               <option value="id">ID</option>
@@ -44,7 +41,7 @@
             </select>
           </div>
 
-          <!-- Task list will be populated here -->
+          <!-- Task list -->
           <div id="todo-list"></div>
 
         </div>
