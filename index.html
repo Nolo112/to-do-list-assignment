@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>To Do List</h2>
+
+          <!-- Form to create a new task -->
+          <form id="create-task" class="form-inline">
+            <div class="form-group">
+              <input id="new-task-content" type="text" class="form-control" placeholder="Enter new task" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Create Task</button>
+          </form>
+
+          <!-- Space between the button and task list -->
+          <div class="task-list-space"></div>
+
+          <!-- Filter and Sort options -->
+          <div class="form-inline">
+            <!-- Filter Toggle -->
+            <label for="filter-tasks">Show: </label>
+            <select id="filter-tasks" class="form-control">
+              <option value="all">All</option>
+              <option value="active">Active</option>
+              <option value="completed">Completed</option>
+            </select>
+
+            <!-- Sorting Toggle -->
+            <label for="sort-tasks">Sort By: </label>
+            <select id="sort-tasks" class="form-control">
+              <option value="id">ID</option>
+              <option value="date">Date</option>
+            </select>
+          </div>
+
+          <!-- Task list will be populated here -->
+          <div id="todo-list"></div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

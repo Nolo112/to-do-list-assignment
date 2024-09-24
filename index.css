@@ -1,0 +1,66 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Styling for the To Do List heading */
+h2 {
+  font-size: 36px;          
+  font-weight: bold;        
+  color: rgba(0, 0, 0, 0.678);           
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Space between the create button and the task list */
+.task-list-space {
+  margin: 20px;
+}
+
+/* Form input field styling */
+#new-task-content {
+  width: 80%;
+  margin-right: 10px;
+}
+
+/* Task item styling */
+#todo-list .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#todo-list p {
+  margin: 0;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+/* Button styling */
+button.delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+input.mark-complete {
+  transform: scale(1.5);
+  margin-left: 10px;
+}
+
+/* Create button hover */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
